@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+/* font-family: "Kalam", cursive; 
+background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+color: white; */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #011024;
+  color: white;
+  /* border: 2px solid red ;  */
+}
+
+nav {
+  /* border: 2px solid red ;  */
+  background-color: #011024;
+  color: white;
+  height: fit-content;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+nav img {
+  height: 38px;
+  width: fit-content;
+  margin-left: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-top: 0.65rem;
+}
+
+#logo-heading {
+  margin-left: 18px;
+}
+
+.gameContainer {
+  /* border: 1px solid green;  */
+  height: 88%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  align-items: center;
+  /* justify-content: center; */
+  /* flex-wrap: nowrap; */
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "Baloo Bhaina 2", cursive;
+  text-align: center;
+  /* border: 1px solid black;  */
+  margin-bottom: 1.5rem;
+  padding-top: 5px;
+}
+.heading h1 {
+  font-size: 2.1rem;
+  /* border: 4px solid #ffff; */
+  padding: 0.3rem 1.6rem;
+}
+
+#bt {
+  position: absolute;
+  width: 90%;
+  top: 0;
+  left: 0;
+  border: 2px solid #ff5713;
+  background-color: #ff5713;
+}
+
+#bd {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #029e27;
+  background-color: #029e27;
+}
+#bl {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border: 2px solid #ff5713;
+  background-color: #ff5713;
+}
+
+#br {
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  border: 2px solid #029e27;
+  background-color: #029e27;
+}
+
+#playerturn {
+  /* border: 1px solid yellow;  */
+  display: inline-block;
+  font-family: "Kalam", cursive;
+  padding: 5px 10px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  
+ 
+}
+
+.outer-container{
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  height: 100%;
+  width: 33%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Damion", cursive;
+  font-weight: 800;
+  margin-bottom: 20px;
+
+  /* border: 1px solid black;  */
+}
+
+.box {
+  border: 2px solid #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: rgb(20, 24, 75);
+  /* border-radius: 5px; */
+}
+
+.winstyle {
+  color: #011024;
+  background-image: linear-gradient(50deg, #edeff1 0%, #d0cdda 74%);
+  border: 1.3px solid #011024;
+  border-radius: 6px;
+}
+
+#scoreboard {
+  width: 37%;
+  height: auto;
+  /* border: 2px solid red;  */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.score {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+}
+
+#pxs,
+#pos {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#px,
+#po,
+#dc {
+  margin-left: 5px;
+}
+
+.three,
+.six,
+.nine {
+  border-right: 0;
+}
+
+.one,
+.four,
+.seven {
+  border-left: 0;
+}
+
+.one,
+.two,
+.three {
+  border-top: 0;
+}
+
+.seven,
+.eight,
+.nine {
+  border-bottom: 0;
+}
+
+.reset-container{
+  width:100%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reset {
+  display: block;
+  background: #011024;
+  color: #ffff;
+  margin: 4.5px 3.5px;
+  padding: 1px 18px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Baloo Bhaina 2";
+  font-size: 18px;
+  font-weight: bolder;
+  width: 35%;
+}
+
+#reset:hover {
+  background-color: #edeff1;
+  color: #011024;
+}
+
+@media screen and (max-width: 675px) {
+  main {
+    height: 100vh;
+    display: block;
+    align-items: center;
+   justify-content: center;
+}
+  .gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      height: 90%;
+      width: 100%;
+  }
+  .heading {
+    margin-top: 3px;
+    width: 90%;
+
+  }
+  .heading h1 {
+    font-size: 1.5rem;
+    /* width: 90%; */
+  }
+
+  #playerturn {
+    font-size: 1.7rem;
+    margin-bottom: 1.3rem;
+}
+
+.outer-container {
+  height: 32vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+  .container {
+  width: 80%;
+  margin-bottom: 0px;
+  }
+  #scoreboard {
+    margin-top: 0.2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .score {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 600;
+    height: fit-content;
+  }
+  .reset-container{
+    margin-top: -.5rem;
+    margin-bottom: .5rem;
+  }
+
+  #reset{
+    width: 85%;
+  }
+
+  #dc {
+    display: none;
+  }
+  #copy{
+    position: absolute;
+    bottom: .1px;
+  }
+}
+
